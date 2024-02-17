@@ -1,0 +1,166 @@
+<mxfile host="Electron" modified="2024-02-16T08:52:02.830Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="LFJ9Ib5koXLtHYYWLwGN" version="21.1.2" type="device">
+  <diagram name="Strona-1" id="N4zmLRq_182qxjyXz0_t">
+    <mxGraphModel dx="2245" dy="3166" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-2" target="4nW62Ax0fN2Ib0us2ZJQ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-2" value="user sends game event" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-3" target="4nW62Ax0fN2Ib0us2ZJQ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-3" value="user api receives event" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-4" target="4nW62Ax0fN2Ib0us2ZJQ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-4" target="4nW62Ax0fN2Ib0us2ZJQ-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-4" value="user api sends request to mongo api to check lock" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-5" value="if error, event discarded and user get notified" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-9" target="4nW62Ax0fN2Ib0us2ZJQ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-9" target="4nW62Ax0fN2Ib0us2ZJQ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-9" value="user api sends event to mq api" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-28" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-10" target="4nW62Ax0fN2Ib0us2ZJQ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-10" value="mq api receives event" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-158" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-13" value="if error, event discarded and user get notified" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-28" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-15" target="4nW62Ax0fN2Ib0us2ZJQ-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-15" target="4nW62Ax0fN2Ib0us2ZJQ-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-15" value="mq api puts event on queue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-278" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-17" target="4nW62Ax0fN2Ib0us2ZJQ-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-17" value="worker takes event off queue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-20" target="4nW62Ax0fN2Ib0us2ZJQ-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-20" target="4nW62Ax0fN2Ib0us2ZJQ-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-20" value="user api sends lock request to mongo api" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="242" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-22" value="if no response, discard and notify" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="242" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-24" target="4nW62Ax0fN2Ib0us2ZJQ-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-24" target="4nW62Ax0fN2Ib0us2ZJQ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-24" value="mongo api sends query to mongodb to lock" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="112" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-26" value="if error, discard and notify" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="112" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-29" target="4nW62Ax0fN2Ib0us2ZJQ-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-29" target="4nW62Ax0fN2Ib0us2ZJQ-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-29" value="mongo api sends query for lockcheck" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-32" value="if locked or error, discard and notify" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-34" value="if rabbit cannot take event, discard and notify" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-278" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-36" target="4nW62Ax0fN2Ib0us2ZJQ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-36" value="user api sends ack to user" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-40" target="4nW62Ax0fN2Ib0us2ZJQ-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-40" target="4nW62Ax0fN2Ib0us2ZJQ-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-40" value="worker processes event" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-42" value="rabbit requeues if worker crash or not respond" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-44" target="4nW62Ax0fN2Ib0us2ZJQ-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-44" target="4nW62Ax0fN2Ib0us2ZJQ-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-44" value="worker sends request to mongo api to update state and unlock" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-46" value="if no response or error, send nack" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-48" target="4nW62Ax0fN2Ib0us2ZJQ-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-48" target="4nW62Ax0fN2Ib0us2ZJQ-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-48" value="mongo api sends update query" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-50" value="if no response or error, send nack" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-52" target="4nW62Ax0fN2Ib0us2ZJQ-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4nW62Ax0fN2Ib0us2ZJQ-52" target="4nW62Ax0fN2Ib0us2ZJQ-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-52" value="mongo api responds to worker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-54" value="what to do if worker does not respond? db is already updated, maybe save old state and restore it, rabbit will requeue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-1070" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-57" value="worker acks to rabbit and rabbit drops event as processed" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="-1220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4nW62Ax0fN2Ib0us2ZJQ-59" value="Drop mq api?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="-180" width="260" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

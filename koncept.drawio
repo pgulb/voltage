@@ -1,0 +1,57 @@
+<mxfile host="Electron" modified="2024-02-15T10:41:22.570Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="BQuoDqhVzW77vWIyYx6_" version="21.1.2" type="device">
+  <diagram name="Strona-1" id="yrZLuf8AOcFEtyjqTIFw">
+    <mxGraphModel dx="2261" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H4U7r1kB5mpUNL12zokX-3" value="Wysyłka eventów i zapytania o stan po przetworzeniu eventu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="H4U7r1kB5mpUNL12zokX-1" target="H4U7r1kB5mpUNL12zokX-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-1" value="Aplikacja kliencka (CLI, webowa, mobilna, cokolwiek byłoby utworzone)&lt;br&gt;Go + BubbleTea&lt;br&gt;Lua + Solar2d&lt;br&gt;Godot&lt;br&gt;AppInventor jako POC" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="207.5" y="640" width="413" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="H4U7r1kB5mpUNL12zokX-2" target="H4U7r1kB5mpUNL12zokX-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SBbvX4K-WiWYtbSAGEUl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="H4U7r1kB5mpUNL12zokX-2" target="SBbvX4K-WiWYtbSAGEUl-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-2" value="API (komunikacja z klastrem, kontrola dostępu itd)&lt;br&gt;Go + Gin z Basic Auth" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="262" y="460" width="304" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wO326ohbCHCN0d_PcyYK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="H4U7r1kB5mpUNL12zokX-4" target="H4U7r1kB5mpUNL12zokX-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-4" value="Klaster RabbitMQ (przyjmowanie komunikatów z aplikacji, publikacja eventów do przetworzenia)&lt;br&gt;AMQP 1.0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="207" y="240" width="413" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="H4U7r1kB5mpUNL12zokX-10" target="H4U7r1kB5mpUNL12zokX-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-10" value="Workery nasłuchujące eventów do przetworzenia zgodnie z logiką biznesową&amp;nbsp;&lt;br&gt;Go + RabbitMQ client" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="207" y="40" width="413" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wO326ohbCHCN0d_PcyYK-2" value="Stan userów i lock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="H4U7r1kB5mpUNL12zokX-15" target="H4U7r1kB5mpUNL12zokX-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="785" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-15" value="Baza stanu userów&lt;br&gt;(przebieg gry i lock możliwości interakcji na czas przetwarzania eventu)&lt;br&gt;MongoDB/RedisJson/Cassandra/SurrealDB ?&lt;br&gt;Cassandra i SurrealDB - za duży nakład zasobów&lt;br&gt;Mongo wydaje się spoko i łatwe do postawienia w klastrze" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="690" y="245" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="H4U7r1kB5mpUNL12zokX-17" value="Jak powinny wyglądać eventy, czy powinny opisywać stan całości przebiegu gry, czy aktualne zdarzenia/działania, zależne od wykorzystania lub braku dodatkowej bazy&lt;br&gt;&lt;br&gt;Jak obsługiwać autentykację użytkownika i wymuszać jedną aktywną sesję, żeby nie pomieszać eventów&lt;br&gt;&lt;br&gt;Jak powinno działać samo API?&lt;br&gt;&lt;br&gt;Czy powinny istnieć oddzielne topici dla stanu oraz dla eventów, gdzie eventy byłyby nadawane przez klienta, a stan przez workera? Stan chyba powinien być przechowywany albo w oddzielnej usłudze albo istnieć w całości w każdym evencie, bo worker musiałby sięgać po stan przy przetwarzaniu eventu, API też musi jakoś serwować aktualny stan dla klienta&lt;br&gt;&lt;br&gt;Być może warto przechować ID sesji w stanie, ID byłoby generowane po stronie klienta i w momencie uruchomienia byłoby nadpisywane w stanie, gdyby zmieniło się w trakcie działania, klient powinien się &quot;wylogować&quot;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-239" y="240" width="340" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="0IZV2Vwwee96oWNyhbf--1" value="Logowanie przez Github/Google lub rejestracja user+pass bez maila" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="646" y="490" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0IZV2Vwwee96oWNyhbf--2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H4U7r1kB5mpUNL12zokX-2" target="0IZV2Vwwee96oWNyhbf--1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SBbvX4K-WiWYtbSAGEUl-1" value="Prawdopodobnie będzie najlepiej rozbić API na 3 różne usługi,&lt;br&gt;API dla end usera, API rabbitowe i API mongo&lt;br&gt;Każde będzie realizować jedno zadanie, oraz będą komunikować się między sobą, a usługi pod nimi będą gadać tylko z jednym API dedykowanym do tego celu" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="740" y="620" width="340" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
