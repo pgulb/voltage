@@ -1,0 +1,38 @@
+{
+    "_id": "pg",
+    "pass": "$2a$10$7WTpX.cgtWCk/itLQEBDe.EmJuiQFL5iaYa/D/2nSpyF1ynra0ByK",
+    "event_in_progress": false,
+    "total_turns_taken": 95,
+    "current_run": {
+        "state": "travel",
+        "sanity": 96,
+        "head": 100,
+        "left_arm": 82,
+        "right_arm": 100,
+        "left_leg": 100,
+        "right_keg": 100,
+        "torso": 100,
+        "blood_level": 90,
+        "ailments": {
+            "bleeding_per_turn": 5,
+            "poisoned": true,
+            "turns_until_poison_kills": 12,
+            "confused": false,
+            "paralyzed": false,
+            "cursed": false,
+            "burning_level_of_parts": {
+                "head": 0,
+                "left_arm": 0,
+                "right_arm": 3,
+                "left_leg": 2,
+                "right_keg": 0,
+                "torso": 0
+            }
+        },
+        "eq": [
+            "apple",
+            "revolver",
+            "medkit"
+        ]
+    }
+}

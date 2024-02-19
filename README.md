@@ -7,6 +7,7 @@ CLI-driven game surival-rpg-roguelike-something with cloud backend
 - worker  
 - user client  
 - ttyd docker deployment on frog  
+- possible discord bot integration  
   
 - NO mongo api  
 - NO rabbitmq api  
@@ -37,4 +38,15 @@ CLI-driven game surival-rpg-roguelike-something with cloud backend
 - process events  
 - validate events  
 - put processed events on 'response' queue for api to grab  
+  
+### game mechanics  
+- % of body parts health  
+- % of blood level  
+- bleeding as % of max blood per turn  
+- % of sanity affecting encounters and fights, death at 0
+- poison as turns to death  
+- confusion as 30% chance to do random action  
+- burn damage deal damage to affected body part, each burn can spread to other part  
+- paralyze as 20% chance to skip turn  
+- curse lowers attack damage to 80%  
   
