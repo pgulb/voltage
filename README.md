@@ -49,4 +49,4 @@ CLI-driven game surival-rpg-roguelike-something with cloud backend
 - burn damage deal damage to affected body part, each burn can spread to other part  
 - paralyze as 20% chance to skip turn  
 - curse lowers attack damage to 80%  
-  
+- nuclear fallout - damage to all body parts and sanity, more as environmental hazard  
