@@ -2,13 +2,6 @@
   
 CLI-based game surival-rpg-roguelike-something with cloud backend  
   
-## TODO  
-- user api  
-- worker  
-- user client  
-- ttyd docker deployment  
-- possible discord bot integration  
-    
 ## Features
   
 ### client
