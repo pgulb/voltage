@@ -1,17 +1,14 @@
-# VoltageWare  
+# Voltage  
   
-CLI-driven game surival-rpg-roguelike-something with cloud backend  
+CLI-based game surival-rpg-roguelike-something with cloud backend  
   
 ## TODO  
 - user api  
 - worker  
 - user client  
-- ttyd docker deployment on frog  
+- ttyd docker deployment  
 - possible discord bot integration  
-  
-- NO mongo api  
-- NO rabbitmq api  
-  
+    
 ## Features
   
 ### client
@@ -32,6 +29,7 @@ CLI-driven game surival-rpg-roguelike-something with cloud backend
 - posting user events  
 - registering users into mongo  
 - putting events to rabbitmq  
+- using websockets to communicate game events  
   
 ### worker  
 - get events off queue  
@@ -41,12 +39,8 @@ CLI-driven game surival-rpg-roguelike-something with cloud backend
   
 ### game mechanics  
 - % of body parts health  
-- % of blood level  
-- bleeding as % of max blood per turn  
-- % of sanity affecting encounters and fights, death at 0
-- poison as turns to death  
-- confusion as 30% chance to do random action  
-- burn damage deal damage to affected body part, each burn can spread to other part  
-- paralyze as 20% chance to skip turn  
-- curse lowers attack damage to 80%  
-- nuclear fallout - damage to all body parts and sanity, more as environmental hazard  
+- % of rust/burn of parts  
+- nuclear fallout - damage to all body parts  
+- rust from water/rain  
+- rust affecting health loss/hit durability of part  
+- using cola to unrust parts  
