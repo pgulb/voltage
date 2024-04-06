@@ -2,13 +2,16 @@
   
 CLI-based game surival-rpg-roguelike-something with cloud backend  
   
-## Features
+## TODO  
+https://github.com/users/pgulb/projects/1/views/1  
   
-### client
+## Features  
+  
+### client  
 - browsing of user's current stats/items etc
 - pull default .rc from repo
   
-### client config
+### client config  
 - store client config in ~/config/.voltagerc or something  
 - encrypt username and password with 4 digit PIN using AES  
 - store there locale setting [pl/en]  
